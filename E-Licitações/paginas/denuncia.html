@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Denúncia</title>
+    <link rel="stylesheet" href="styles/denuncia-styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Adicione sua denúncia</h1>
+            <form action="/submit" method="post" onsubmit="showNotification(); return false;">
+                <div class="input-group">
+                    <label for="nome">Nome *</label>
+                    <input type="text" id="nome" name="nome" placeholder="Informe o nome da licitação" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="motivo">Motivo *</label>
+                    <input type="text" id="motivo" name="motivo" placeholder="Informe o motivo da denúncia" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="descricao">Fale mais sobre a denúncia... *</label>
+                    <textarea id="descricao" name="descricao" required></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label for="anexo">Adicione algum anexo (opcional)</label>
+                    <input type="file" id="anexo" name="anexo">
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <div id="notification" class="notification">Denúncia enviada com sucesso!</div>
+    </div>
+
+    <script>
+        function showNotification() {
+            var notification = document.getElementById("notification");
+            notification.style.display = "block";
+            setTimeout(function() {
+                notification.style.display = "none";
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
