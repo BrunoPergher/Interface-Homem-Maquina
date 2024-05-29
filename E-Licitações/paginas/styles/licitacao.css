@@ -3,7 +3,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #d5d3d3;
 }
 
 .comments-container {
@@ -23,7 +23,7 @@ body, html {
     border-bottom: 1px solid #ccc;
     padding: 20px;
     margin-bottom: 10px;
-    background-color: white;
+    background-color: #fbfbfb;
     border-radius: 5px;
     box-shadow: 0 2px 3px rgba(0,0,0,0.05);
 }
@@ -162,10 +162,9 @@ strong {
 
 .restoration-container {
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #F8F9FA;
     padding: 20px;
     border-radius: 8px;
-    margin: 20px 0;
     width: 100%; /* or adjust based on your layout needs */
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }

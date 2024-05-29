@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="styles/header.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="navbar-brand" href="#">
+                <img src="imgs/Logo.PNG" alt="Logo" style="height: 40px;">
+            </a>
+            <div class="navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#">Início</a></li>
+                    <li class="nav-item"><a href="#">Licitações</a></li>
+                    <li class="nav-item"><a href="#">Prestadores</a></li>
+                    <li class="nav-item"><a href="#">Denúncias</a></li>
+                </ul>
+                <div class="navbar-buttons">
+                    <button class="btn-white">Login</button>
+                    <button class="btn-green">Registrar</button>
+                </div>
+            </div>
+            <button class="navbar-toggle" onclick="toggleNavbar()">
+                <span class="toggle-icon">&#9776;</span>
+            </button>
+        </nav>
+    </header>
+    <script src="scripts/header.js"></script>
+</body>
+</html>
