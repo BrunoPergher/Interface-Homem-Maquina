@@ -12,5 +12,5 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(() => {
         document.getElementById('loading').style.display = 'none';
         document.querySelector('.table-container').style.display = 'block';
-    }, 5000);
+    }, 2000);
 });
