@@ -1,3 +1,4 @@
+/* Reset básico e estilos globais */
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
@@ -5,6 +6,49 @@ body {
     padding: 20px;
 }
 
+/* Estilização do título principal */
+h1 {
+    text-align: center;
+    color: black; /* Cor do texto alterada para preto */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+/* Estilização do subtítulo */
+h2 {
+    text-align: center;
+    margin-top: 20px; /* Espaçamento adicional para clareza */
+}
+
+/* Estilização do conteúdo principal */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    background-color: #f9f9f9;/* Fundo cinza para destacar a área */
+    padding: 20px;
+    border-radius: 10px; /* Bordas arredondadas para suavidade */
+}
+
+.content img {
+    width: 40%; /* Aumenta o tamanho da imagem */
+    max-width: 450px; /* Largura máxima aumentada para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas na imagem */
+}
+
+.content p {
+    background-color: #4CAF50; /* Fundo verde */
+    color: white; /* Texto branco */
+    padding: 40px;
+    border-radius: 1px 30px 30px 1px; /* 10px;
+    width: 60%; /* Aumenta a largura do parágrafo */
+    max-width: 600px; /* Largura máxima aumentada para o texto */
+    margin-left: 0px; /* Espaço entre a imagem e o texto */
+    font-size: 18px; /* Aumenta o tamanho da fonte para melhor legibilidade */
+}
+
+/* Estilização da tabela e contêineres relacionados */
 .table-container {
     width: 90%;
     margin: 20px auto;
@@ -12,12 +56,6 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     border-radius: 10px;
-}
-
-.table-container h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2em;
 }
 
 .loading {
@@ -55,12 +93,6 @@ body {
     margin-right: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-}
-
-.header .fas {
-    font-size: 1.5em;
-    color: #666;
-    cursor: pointer;
 }
 
 table {
@@ -116,31 +148,6 @@ th {
     background-color: #45a049;
 }
 
-.tooltip {
-    position: relative;
-    cursor: pointer;
-}
-
-.tooltip::after {
-    content: attr(data-tooltip);
-    position: absolute;
-    background-color: #333;
-    color: #fff;
-    padding: 5px;
-    border-radius: 5px;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s;
-}
-
-.tooltip:hover::after {
-    opacity: 1;
-}
-
 .footer {
     display: flex;
     justify-content: space-between;
@@ -165,8 +172,21 @@ th {
     outline: none;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .content img, .content p {
+        width: 100%; /* Ajusta para ocupar toda a largura em dispositivos móveis */
+        max-width: none;
+        margin-right: 0;
+    }
+
+    .content p {
+        margin-top: 20px;
+    }
+
     .header {
         flex-direction: column;
         align-items: stretch;
