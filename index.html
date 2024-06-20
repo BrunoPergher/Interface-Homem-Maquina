@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videira Transparente</title>
+    <link rel="stylesheet" href="licitacoes/paginas/landing/styles.css">
+    <link rel="stylesheet" href="licitacoes/paginas/styles/footer.css">
+    <link rel="stylesheet" href="licitacoes/paginas/styles/header.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="navbar-brand" href="index.html">
+                <img src="licitacoes/paginas/imgs/Logo.PNG" alt="Logo" style="height: 40px;">
+            </a>
+            <div class="navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="index.html">Início</a></li>
+                    <li class="nav-item"><a href="licitacoes/paginas/tabelaLicitacoes/index.html">Licitações</a></li>
+                    <li class="nav-item"><a href="licitacoes/paginas/tabelaPrestadores/index.html">Prestadores</a></li>
+                    <li class="nav-item"><a href="licitacoes/paginas/tabelaDenuncias/index.html">Denúncias</a></li>
+                </ul>
+                <div class="navbar-buttons">
+                    <button class="btn-white"><a href="licitacoes/paginas/login/index.html" class="white">Login</a></button>
+                    <button class="btn-green"><a href="licitacoes/paginas/cadastro/index.html" class="green">Registrar</a></button>
+                </div>
+            </div>
+            <button class="navbar-toggle" onclick="toggleNavbar()">
+                <span class="toggle-icon">&#9776;</span>
+            </button>
+        </nav>
+    </header>
+    <script src="licitacoes/paginas/scripts/header.js"></script>
+
+    <div class="odio">
+        <div class="header-content">
+            <h1>Acompanhe as licitações videirenses!</h1>
+            <img src="licitacoes/paginas/landing/images/logo.png" alt="Logo Videira Transparente">
+        </div>
+    </div>
+    <main>
+        <section class="intro">
+            <h2>Aqui você pode:</h2>
+            <div class="options">
+                <div class="option">
+                    <img src="licitacoes/paginas/landing/icones/icone-search.png" alt="Acessar as licitações do município">
+                    <h3>Acessar as licitações</h3>
+                </div>
+                <div class="option">
+                    <img src="licitacoes/paginas/landing/icones/predio.png" alt="Conhecer nossos prestadores de serviços">
+                    <h3>Conhecer nossos prestadores de serviços</h3>
+                </div>
+                <div class="option">
+                    <img src="licitacoes/paginas/landing/icones/gremio.png" alt="Denunciar supostas fraudes">
+                    <h3>Denunciar supostas fraudes</h3>
+                </div>
+            </div>
+        </section>
+        <section class="details">
+            <div class="detail">
+                <img src="licitacoes/paginas/landing/images/image-licitacoes.png" alt="Acesso as licitações">
+                <div class="detail-text">
+                    <h3>Acesso as licitações</h3>
+                    <p>Acompanhe as licitações do município com transparência e agilidade.</p>
+                    <button onclick="location.href='licitacoes/paginas/tabelaLicitacoes/index.html';">Conferir</button>
+                </div>
+            </div>
+            <div class="detail">
+                <img src="licitacoes/paginas/landing/images/image-prestadores.png" alt="Nossos prestadores">
+                <div class="detail-text">
+                    <h3>Nossos prestadores</h3>
+                    <p>Conheça os prestadores de serviços do município e suas avaliações.</p>
+                    <button onclick="location.href='licitacoes/paginas/tabelaPrestadores/index.html';">Conferir</button>
+                </div>
+            </div>
+            <div class="detail">
+                <img src="licitacoes/paginas/landing/images/image-denunciar.png" alt="Denuncie">
+                <div class="detail-text">
+                    <h3>Denuncie</h3>
+                    <p>Faça sua parte e nos ajude a tornar as licitações ainda mais transparentes.</p>
+                    <button onclick="location.href='licitacoes/paginas/tabelaDenuncias/index.html';">Conferir</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="licitacoes/paginas/imgs/logo-dark.png" alt="Vidreira Transparente Logo" class="footer-logo">
+            <p class="copyright-text">Copyright &copy; 2024 Videira Transparente Ltda. - Todos os direitos reservados.</p>
+            <img src="licitacoes/paginas/imgs/social-icons.png" alt="Social Media Icons" class="social-media-icons">
+        </div>
+    </footer>
+</body>
+</html>
